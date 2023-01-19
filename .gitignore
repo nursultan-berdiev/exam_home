@@ -1,0 +1,4 @@
+venv/
+app/entrypoint.sh
+app/db.sqlite3
+.idea/

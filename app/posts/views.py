@@ -10,7 +10,7 @@ from rest_framework.pagination import PageNumberPagination, LimitOffsetPaginatio
 from rest_framework import permissions
 
 from .models import Tweet, StatusTweet, StatusType, Comment
-from .serilaizers import TweetSerializer, StatusTweetSerializer, CommentSerializer
+from .serilaizers import TweetSerializer, StatusTweetSerializer, CommentSerializer, StatusTypeSerializer
 from .permissions import PostPermission
 
 
@@ -68,3 +68,7 @@ class CommentListCreateAPIView(generics.ListCreateAPIView):
             tweet_id=self.kwargs.get('tweet_id')
         )
 
+
+class StatusViewSet(viewsets.ModelViewSet):
+    queryset = StatusType.objects.all()
+    serializer_class = StatusTypeSerializer

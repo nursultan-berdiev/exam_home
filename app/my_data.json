@@ -1,0 +1,66 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "kqidlimsl588t4scbsmmp8l6xrx35vv0",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQBf-FsyFAF1g8eu83kKWAVA0kpT0Z_9026UGvM_Pem3na1uK3nhY_R3Zlil1-WaDpmeoh4oPqvfGp1XWZAz8SftrOxxbT63a2fweFetnXggw6zIEASQqNIqBwEVDI7JRSKZgMliTZwUalJxlTdmZnkCBrHIB9vsxwN1E:1pIN5G:0TBmm2FGnCK5M6w9TeHUQNxD1LH-50t5eisfwII6C9o",
+        "expire_date": "2023-02-02T05:03:30.288Z"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$qM1ObpVQ6zUD3ApXV4R4vm$q3QtlCoVmFmKBYBITXYNG9XtdGIxfLcj0pOP83YKYac=",
+        "last_login": "2023-01-19T04:40:45.095Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-01-19T04:40:26.485Z",
+        "patronymic": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$YPbO1VoGnMvm5ogUeytxfT$ww6CzLI7BafmiV8yWzumHYT19Fumzqsx6Jw8iiMpG3w=",
+        "last_login": "2023-01-19T05:03:30.284Z",
+        "is_superuser": false,
+        "username": "test_user",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-19T05:03:24.232Z",
+        "patronymic": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "is_author": true
+    }
+},
+{
+    "model": "posts.tweet",
+    "pk": 1,
+    "fields": {
+        "text": "Какой то текст (изменен)",
+        "created_at": "2023-01-19T05:03:39.386Z",
+        "updated_at": "2023-01-19T05:03:39.386Z",
+        "profile": 1
+    }
+}
+]

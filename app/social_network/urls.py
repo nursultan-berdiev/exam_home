@@ -15,6 +15,7 @@ acc_router.register('register', acc_view.ProfileRegisterAPIView)
 
 posts_router = DefaultRouter()
 posts_router.register('tweet', posts_view.TweetViewSet)
+posts_router.register('type', posts_view.StatusViewSet)
 
 schema_view = get_schema_view(
    openapi.Info(

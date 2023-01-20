@@ -5,6 +5,12 @@ from rest_framework.generics import get_object_or_404
 from .models import Tweet, Comment, StatusTweet, StatusType
 
 
+class StatusTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StatusType
+        fields = "__all__"
+
+
 class TweetSerializer(serializers.ModelSerializer):
     statuses = serializers.ReadOnlyField(source='get_status_count')
 
@@ -15,7 +21,6 @@ class TweetSerializer(serializers.ModelSerializer):
 
 
 class CommentSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Comment
         fields = '__all__'

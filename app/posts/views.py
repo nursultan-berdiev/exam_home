@@ -70,5 +70,8 @@ class CommentListCreateAPIView(generics.ListCreateAPIView):
 
 
 class StatusViewSet(viewsets.ModelViewSet):
+    """
+    This API allows to create statuses
+    """
     queryset = StatusType.objects.all()
     serializer_class = StatusTypeSerializer

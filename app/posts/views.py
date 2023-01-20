@@ -55,6 +55,9 @@ class TweetViewSet(viewsets.ModelViewSet):
 
 
 class CommentListCreateAPIView(generics.ListCreateAPIView):
+    """
+    Allow to create and get list of Comments related to exact tweet
+    """
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [PostPermission, ]
